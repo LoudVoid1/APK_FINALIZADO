@@ -1,0 +1,7 @@
+{
+  "name": "EyeLog",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

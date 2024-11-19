@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Editar Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="profileForm" (ngSubmit)="saveProfile()">
+    <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input formControlName="name" placeholder="Ingresa tu nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Correo electrónico</ion-label>
+      <ion-input formControlName="email" type="email" placeholder="Ingresa tu correo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Teléfono</ion-label>
+      <ion-input formControlName="phone" type="tel" placeholder="Ingresa tu teléfono"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" [disabled]="!profileForm.valid">Guardar Cambios</ion-button>
+  </form>
+</ion-content>

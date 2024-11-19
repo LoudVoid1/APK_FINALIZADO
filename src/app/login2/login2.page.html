@@ -1,0 +1,23 @@
+<!-- src/app/login2/login2.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Iniciar sesión / Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" (click)="login()">Iniciar Sesión</ion-button>
+    <ion-button expand="full" (click)="register()">Registrarse</ion-button>
+  </form>
+</ion-content>

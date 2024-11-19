@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Eliminar Cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Confirmación de Eliminación</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>¿Estás seguro de que deseas eliminar tu cuenta? Esta acción es irreversible y se perderán todos los datos asociados.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" color="danger" (click)="confirmDelete()">
+    Confirmar Eliminación
+  </ion-button>
+
+  <ion-button expand="block" color="medium" (click)="cancelDelete()">
+    Cancelar
+  </ion-button>
+</ion-content>

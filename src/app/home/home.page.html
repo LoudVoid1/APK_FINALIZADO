@@ -1,0 +1,172 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+  
+
+<ion-app>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <ion-menu contentId="main-content">
+    <ion-header>
+      
+      <ion-toolbar color="translucent" ><br>
+        <ion-title style="background-color: rgb(24, 105, 255); color: rgb(255, 255, 255);">EyeLog</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-searchbar style="color: rgb(24, 105, 255);" >Busqueda<br></ion-searchbar> <br>
+    <ion-button style="--background: rgb(24, 105, 255); --color: white;" [routerLink]="['/horarios1']">
+      Horarios
+    </ion-button>
+<ion-button [routerLink]="['/ubicacion']" color="light">
+  ubicación
+</ion-button>
+<ion-button [routerLink]="['/quienessomos']" color="light">
+  ¿Quienes Somos?
+</ion-button>
+<ion-button [routerLink]="['/login2']" color="light">
+   Registrarse
+</ion-button>
+<ion-button style="--background: rgb(24, 105, 255); --color: white;" [routerLink]="['/contactanos']">
+  Contactanos
+</ion-button>
+
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Lentes Platinum 😍</ion-card-title>
+        <ion-img src="assets/img/Glasses.jpg" style="width: 149px; height: 149px;" ></ion-img>
+      </ion-card-header>
+      <ion-card-content>
+        Lentes Platinium by Chrome Hearts hechos de platino, resistentes a golpes, uso de Seguridad,
+        tienen filtro UV y el famoso "AntiReflex"
+      </ion-card-content>
+      
+    
+      <a href="">
+        <ion-button fill="clear">Comprarㅤㅤㅤㅤㅤㅤ</ion-button>
+      </a>
+      <a href="">
+        <ion-button fill="clear">Visualizarㅤㅤㅤㅤ</ion-button>
+      </a>
+    </ion-card>
+    
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>      
+      <ion-header class="ion-no-border">
+        <ion-toolbar>
+          <ion-buttons slot="start">
+          </ion-buttons>
+          <ion-toolbar>
+            <ion-title style="color: rgb(24, 105, 255);">
+              Eye 
+            </ion-title>
+            <ion-buttons slot="start">
+
+            </ion-buttons>
+            <ion-title>Log</ion-title>
+          </ion-toolbar>
+          <div class="LogoImagen">
+            <ion-img src="assets/img/EyeLogo.png" ></ion-img>
+          </div>             
+          <ion-buttons slot="end">
+            <ion-button color="dark">
+            </ion-button>
+          </ion-buttons> 
+        </ion-toolbar>
+
+        <ion-menu-button style="margin-bottom: 100%;"></ion-menu-button>
+        
+      </ion-header>
+      </ion-header>
+      
+    <ion-content class="ion-padding" style="text-align: center;">  
+        <ion-content class="ion-padding" style="text-align: center;">
+        ¿ Necesitas tratamiento Ocular ? <br>Este es tu sitio.</ion-content></ion-content>
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+sesion = sesión <!-- -->
+<div class="agendarr">
+  
+  <form #formulario>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label style="color: rgb(24, 105, 255);" floating>Correo Electrónico</ion-label>
+          <ion-input type="email"
+                    required
+                    name="correo"
+                    ngModel></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label  style="color: rgb(24, 105, 255);"  floating>Contraseña</ion-label>
+          <ion-input type="password"
+                    required
+                    name="clave"
+                    ngModel></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <div class="inicioyregistro">
+    </div>
+
+    <a href="">
+      <ion-button style="color: white; font-size: 80%;">
+        Iniciar Sesión
+      </ion-button>
+    </a>
+    <br>
+    <ion-button style="--background: rgb(24, 105, 255); --color: white;" [routerLink]="['/login']">
+      Registrarse
+    </ion-button>
+
+  </form>
+</div>  
+
+
+<ion-content class="ion-padding">
+</ion-content>
+<ion-footer>
+
+  
+  
+<ion-card>
+  <ion-img src="assets/img/Cartier.png" style="width: 390px; height: 150px;" ></ion-img>
+    <ion-card-title style="text-align: center;">Lentes - Cartier "Edición Limitada"</ion-card-title>
+  <ion-card-content style="text-align: left;">
+   Unos hermosos lentes cartier con base de oro y diamantes "Marlboro" incrustados en los lentes con una combinancion perfecta para dislumbrar en las noches de salidas elegantes 
+   y reuniones importantes. 
+  </ion-card-content>
+
+</ion-card>
+  <ion-toolbar>
+    <a href="https://es.wikipedia.org/wiki/Todos_los_derechos_reservados"><ion-button color="light" >© EyeLog 2024 todos los derechos están reservados.</ion-button><br></a>
+    
+  </ion-toolbar>
+</ion-footer>
+
+<!-- <ion-content class="ion-padding">
+
+  <ion-button (click)="scrollToBottom()">Ír hacía abajo.</ion-button>
+  
+  
+    <p>
+      UN EJEMPLO DE UN EJEMPLO DE OTRO EJEMPO BLA BLA BLA.    UN EJEMPLO DE UN EJEMPLO DE OTRO EJEMPO BLA BLA BLA.    UN EJEMPLO DE UN EJEMPLO DE OTRO EJEMPO BLA BLA BLA.
+      UN EJEMPLO DE UN EJEMPLO DE OTRO EJEMPO BLA BLA BLA.    UN EJEMPLO DE UN EJEMPLO DE OTRO EJEMPO BLA BLA BLA.    UN EJEMPLO DE UN EJEMPLO DE OTRO EJEMPO BLA BLA BLA.
+      UN EJEMPLO DE UN EJEMPLO DE OTRO EJEMPO BLA BLA BLA.    UN EJEMPLO DE UN EJEMPLO DE OTRO EJEMPO BLA BLA BLA.    UN EJEMPLO DE UN EJEMPLO DE OTRO EJEMPO BLA BLA BLA.
+    </p>
+  
+    <ion-button (click)="scrollToTop()">Ír hacía arriba.</ion-button>  
+  </ion-content> -->
+
+</ion-app>
+
